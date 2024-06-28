@@ -191,8 +191,13 @@ main {
           display: flex;
           background-color: white;
           color: black;
-          padding: 60px 50px;
-          border-radius: 2000px;
+          padding: 60px 60px;
+          border-radius: 50%;
+          align-items: center;
+          flex-direction: column;
+          img {
+            width: 40px;
+          }
         }
       }
     }
@@ -213,6 +218,76 @@ main {
         background-color: #1a0924;
         color: white;
       } 
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1160px;
+  .footer-englobamento {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #504f4f;
+    font-size: 28px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid white;
+    .footer-logos {
+      display: flex;
+      gap: 20px;
+      img {
+        border: 1px solid white;
+        padding: 8px;
+        fill: white;
+        border-radius: 50%;
+        width: 50px;
+      }
+    }
+  }
+  .grupo-footer {
+    padding-top: 80px;
+    gap: 20px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    .ancoras {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .ancoras-gray {
+        display: flex;
+        gap: 32px;
+        align-self: flex-end;
+        a {
+          color: white;
+          text-decoration: none;
+          color: #504f4f;
+        }
+      }
+    }
+    .ancoras-header {
+      display: flex;
+      gap: 32px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .englobamento-header {
+      display: flex;
+      flex-direction: column;
+      p {
+        color: #504f4f;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 24px;
+        font-weight: 400;
+        color: white;
+      }
     }
   }
 }

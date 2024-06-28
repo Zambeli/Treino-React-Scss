@@ -1,4 +1,15 @@
+import Produto from "./Produto"
+
 const Contatos = () => {
+    
+        const nome = [
+            'Produtos',
+            'Servicos',
+            'Portfolio',
+            'Sass',
+            'Outros'
+        ]
+    
     return (
         <>
         <div className="container-contatos">
@@ -9,21 +20,9 @@ const Contatos = () => {
                     <div className="div-produtos">
                         <p>Oi!. O que melhor te explica?</p>
                         <div className="produtos">
-                            <div className="produto">
-                            <p>Produtos</p>
-                            </div>
-                            <div className="produto">
-                            <p>Servicos</p>
-                            </div>
-                            <div className="produto">
-                            <p>Personalidade</p>
-                            </div>
-                            <div className="produto">
-                            <p>Sass</p>
-                            </div>
-                            <div className="produto">
-                            <p>Outros</p>
-                            </div>
+                        {nome.map((nome, index) => (
+                        <Produto key={index} nome={nome} />
+                    ))}
                         </div>
                     </div>
                     <div className="botao">
